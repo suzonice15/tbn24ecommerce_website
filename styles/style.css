@@ -1,0 +1,101 @@
+*{padding: 0;
+    margin: 0;}
+    a {
+        color: #555555  !important;
+    }
+    .desktop-header-section{height: 70px;}
+    .desktop-header-section .search-holder .fa-search{
+        position: relative;
+    float: right;
+    top: -27px;
+    left: -5px;
+    }
+    .menu-right-side-icon {float:right}
+    .menu-right-side-icon a{padding: 5px 10px;font-size: 18px;text-decoration:none;}
+     .desktop-category-menu-icon{background: #3a3939;padding: 8px;}
+     .desktop-nav-bar{height:55px;}
+     .slider-section img{height: 450px;}
+     .slider-bottom-section img{height: 450px;}
+     .slider-bottom-section h2{
+        position: relative;
+        text-align: center;
+       
+        margin-top: -309px;
+        color: white;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: bold;
+        
+        }
+     .slider-bottom-section p{
+        position: relative;
+        text-align: center;
+        
+        color: white;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: bold;
+     }
+
+     .slider-bottom-section a{
+        position: relative;
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: bold;
+        background: #6b4e48;
+        width: 150px;
+        left: 33%;
+        color: white !important;
+        padding: 7px;
+        cursor: pointer;
+        }
+        .product-block-quick-quickshop{
+            width: 43px;
+            height: 43px;
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 6px;
+            margin-top: 18px;
+            background: white;
+            padding: 9px 13px;
+            border-radius: 50%;
+           
+            box-shadow: 0 0 6px -4px #000;
+        }
+        .product-block-quick-compare{
+            width: 43px;
+            height: 43px;
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 6px;
+            margin-top: 70px;
+            background: white;
+            padding: 9px 13px;
+            border-radius: 50%;
+           
+            box-shadow: 0 0 6px -4px #000;
+        }
+
+        .product-block-quick-stock{
+            display: block;
+            position: absolute;
+            top: 208px;
+            margin-top: 70px;
+            background: white;
+            padding: 9px 13px;
+            color: green !important;
+            -webkit-box-shadow: 0 0 6px -4px #000;
+            box-shadow: 0 0 6px -4px #000;
+            text-decoration: none;
+
+        }
+        .Featured-products {margin-top:200px}
+        .home-fesured-product .card-hidden{display: none;}
+        .home-fesured-product:hover .card-hidden{display: block;}
+
+
+     
