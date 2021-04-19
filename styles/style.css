@@ -93,9 +93,440 @@
             text-decoration: none;
 
         }
-        .Featured-products {margin-top:200px}
+        .Featured-products {margin-top:235px}
+        .home-fesured-product:hover  {  
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
         .home-fesured-product .card-hidden{display: none;}
         .home-fesured-product:hover .card-hidden{display: block;}
+        .Featured-products-heading a{font-size: 16px;}
+        .Featured-products-heading{margin-top:10px}
+        .card-section button{
+            font-size: 14px;
+padding: 0 15px;
+line-height: 36px;
+display: inline-block;
+background: #333333;
+margin-left: 5px;
+border:none;
+color:white
+        }
+        .home-fesured-product-right-first{
+            background: rgba(155,155,155,.05) !important;border: 0;height: auto;
+        }
+        .home-right-view{background: #333333 !important;
+            border: none !important;
+            width: 35px;
+            height: 33px;
+            color: white !important;
+            padding: 5px 11px;
+            display: block;
+            border-radius: 10%;}
+.single-home-right-product{
+    background: rgba(155,155,155,.05);
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.single-home-right-product:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.top-category-body a {color: white !important;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;}
+.top-category-body  {
+    text-align: center;
+    position: relative;
+    top: -294px;
+color: white;
+background: rgba(0,0,0,.3);
+width: 100%;
+height: 296px;
+align-items: center;
+padding-top: 157px;
+border-radius: 4px;
+}
+.top-category-section:hover .single-top-category-section{padding:2px;}
+.top-category-section:hover .top-category-body{background:none}
+.top-category-section{max-height: 200px;}
+.brand-section{margin-top: 109px !important;}
+
+.socials {
+    margin-top: 40px
+}
+
+.socials a {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: Center;
+    font-size: 14px;
+    padding: 0 !important;
+    border-radius: 100%;
+    background: #6f6262;
+    color: white !important;
+}
+
+.socials ul {
+    list-style: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block
+}
+
+.socials ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0
+}
+
+.socials ul li:last-child {
+    margin-right: 0
+}
+
+.socials ul li a:hover {
+    color: #fff
+}
+
+.socials .social-fb:hover {
+    background-color: #3b5998
+}
+
+.socials .social-twitter:hover {
+    background-color: #1da1f2
+}
+
+.socials .social-yt:hover {
+    background-color: #cc181e
+}
+
+.socials .social-insta:hover {
+    background-color: #a57d60
+}
+
+.socials .social-tumblr:hover {
+    background-color: #36465d
+}
+
+.socials .social-pinterest:hover {
+    background-color: #cb2027
+}
+
+.socials .social-rss:hover {
+    background-color: #faa21b
+}
+.footer h3{
+    color: #f9f9f9;
+    margin-bottom: 15px;
+font-size: 1.1em;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer ul li a {
+    display: inline-block;
+    padding: 2px 0;
+    text-decoration: none;
+}
+.footer, footer, .footer a, footer .copyright a, footer .shop-rating {
+    color: #cfcfcf !important
+}
+.socials ul li a:hover {
+    color: #fff
+}
+.payment-icons {
+    background-image: url("payment-icons.png")
+}
+
+.payment-icons.light {
+    background-image: url("payment-icons-light.png")
+}
+
+.payment-icons {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    margin-right: 5px;
+    background-size: 100% auto;
+    margin-right: 10px
+}
+
+.payment-icons-cart .payment-icons {
+    margin-right: 10px
+}
+
+.payment-icons:last-child {
+    margin-right: 0
+}
+
+.payment-icons.icon-payment-acceptgiro {
+    background-position: 0 0
+}
+
+.payment-icons.icon-payment-achterafbetale {
+    background-position: 0 -30px
+}
+
+.payment-icons.icon-payment-afterpay {
+    background-position: 0 -60px
+}
+
+.payment-icons.icon-payment-alfabank {
+    background-position: 0 -90px
+}
+
+.payment-icons.icon-payment-americanexpress {
+    background-position: 0 -120px
+}
+
+.payment-icons.icon-payment-banktransfer {
+    background-position: 0 -150px
+}
+
+.payment-icons.icon-payment-betaalnaontvangst {
+    background-position: 0 -180px
+}
+
+.payment-icons.icon-payment-cartebleue {
+    background-position: 0 -210px
+}
+
+.payment-icons.icon-payment-clickandbuy {
+    background-position: 0 -240px
+}
+
+.payment-icons.icon-payment-cash {
+    background-position: 0 -1620px
+}
+
+.payment-icons.icon-payment-dankort {
+    background-position: 0 -270px
+}
+
+.payment-icons.icon-payment-directdebit {
+    background-position: 0 -300px
+}
+
+.payment-icons.icon-payment-directebanki {
+    background-position: 0 -330px
+}
+
+.payment-icons.icon-payment-discover {
+    background-position: 0 -360px
+}
+
+.payment-icons.icon-payment-dotpay {
+    background-position: 0 -390px
+}
+
+.payment-icons.icon-payment-ebo {
+    background-position: 0 -420px
+}
+
+.payment-icons.icon-payment-ecare {
+    background-position: 0 -450px
+}
+
+.payment-icons.icon-payment-ecelv {
+    background-position: 0 480px
+}
+
+.payment-icons.icon-payment-empayment {
+    background-position: 0 -510px
+}
+
+.payment-icons.icon-payment-eps {
+    background-position: 0 -540px
+}
+
+.payment-icons.icon-payment-fashioncheque {
+    background-position: 0 -570px
+}
+
+.payment-icons.icon-payment-giftcard {
+    background-position: 0 -600px
+}
+
+.payment-icons.icon-payment-giropay {
+    background-position: 0 -630px
+}
+
+.payment-icons.icon-payment-ideal {
+    background-position: 0 -660px
+}
+
+.payment-icons.icon-payment-incasso {
+    background-position: 0 -690px
+}
+
+.payment-icons.icon-payment-invoice {
+    background-position: 0 -720px
+}
+
+.payment-icons.icon-payment-ippies {
+    background-position: 0 -750px
+}
+
+.payment-icons.icon-payment-klarna {
+    background-position: 0 -780px
+}
+
+.payment-icons.icon-payment-maestro {
+    background-position: 0 -810px
+}
+
+.payment-icons.icon-payment-mailru {
+    background-position: 0 -840px
+}
+
+.payment-icons.icon-payment-mastercard {
+    background-position: 0 -870px
+}
+
+.payment-icons.icon-payment-minitix {
+    background-position: 0 -900px
+}
+
+.payment-icons.icon-payment-mistercash {
+    background-position: 0 -930px
+}
+
+.payment-icons.icon-payment-multisafepay {
+    background-position: 0 -960px
+}
+
+.payment-icons.icon-payment-nordea {
+    background-position: 0 -990px
+}
+
+.payment-icons.icon-payment-onlinegiro {
+    background-position: 0 -1020px
+}
+
+.payment-icons.icon-payment-onlinetransfer {
+    background-position: 0 -1050px
+}
+
+.payment-icons.icon-payment-paypal {
+    background-position: 0 -1080px
+}
+
+.payment-icons.icon-payment-paysafecard {
+    background-position: 0 -1110px
+}
+
+.payment-icons.icon-payment-phone {
+    background-position: 0 -1140px
+}
+
+.payment-icons.icon-payment-postfinance {
+    background-position: 0 -1170px
+}
+
+.payment-icons.icon-payment-przelewy24 {
+    background-position: 0 -1200px
+}
+
+.payment-icons.icon-payment-qiwi {
+    background-position: 0 -1230px
+}
+
+.payment-icons.icon-payment-rembours {
+    background-position: 0 -1260px
+}
+
+.payment-icons.icon-payment-ukash {
+    background-position: 0 -1290px
+}
+
+.payment-icons.icon-payment-visa {
+    background-position: 0 -1320px
+}
+
+.payment-icons.icon-payment-visadebit {
+    background-position: 0 -1350px
+}
+
+.payment-icons.icon-payment-visaelectro {
+    background-position: 0 -1380px
+}
+
+.payment-icons.icon-payment-vpay {
+    background-position: 0 -1410px
+}
+
+.payment-icons.icon-payment-wallie {
+    background-position: 0 -1440px
+}
+
+.payment-icons.icon-payment-webmoney {
+    background-position: 0 -1470px
+}
+
+.payment-icons.icon-payment-webshopgiftcard {
+    background-position: 0 -1500px
+}
+
+.payment-icons.icon-payment-yourgift {
+    background-position: 0 -1530px
+}
+
+.payment-icons.icon-payment-afterpay_nl_b2c_digital_invoice,.payment-icons.icon-payment-afterpay_nl_b2c_direct_debit,.payment-icons.icon-payment-afterpay_nl_b2b_digital_invoice,.payment-icons.icon-payment-afterpay_be_b2c_digital_invoice {
+    background-position: 0 -60px
+}
+
+.payment-icons.icon-payment-pi {
+    background-position: 0 -1560px
+}
+
+.payment-icons.icon-payment-postnl {
+    background-position: 0 -1590px
+}
+
+.payment-icons.icon-payment-bitcoi {
+    background-position: 0 -1650px
+}
+
+.payment-icons.icon-payment-belfius {
+    background-position: 0 -1680px
+}
+
+.payment-icons.icon-payment-kbc {
+    background-position: 0 -1710px
+}
+
+.payment-icons.icon-payment-bunq {
+    background-position: 0 -1740px
+}
+
+.payment-icons.icon-payment-creditcard {
+    background-position: 0 -1770px
+}
+
+.payment-icons.icon-payment-vvvgiftcard {
+    background-position: 0 -1800px
+}
+
+.payment-icons.icon-payment-inghomepay {
+    background-position: 0 -1830px
+}
+
+.payment-icons.icon-payment-klarnapaylater {
+    background-position: 0 -1860px
+}
+
+.payment-icons.icon-payment-cartesbancaires {
+    background-position: 0 -1890px
+}
+
+
 
 
      
