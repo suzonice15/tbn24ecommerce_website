@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import { Swiper, SwiperSlide,Autoplay } from 'swiper/react';
+
+// Import Swiper styles
 // import React,{useState} from 'react'
 const fesuredProduct=[
   {
@@ -86,6 +89,7 @@ export default function Home() {
          
         <div className="col-6 py-3">
             <div className="menu-right-side-icon me-2">
+           
                 <a href=""><span className="me-1">us</span><i className="fas fa-globe"></i></a>
                 <a href=""> <i className="fas fa-user"></i></a>
                 <a href=""> <i className="far fa-chart-bar"></i></a>
@@ -96,43 +100,96 @@ export default function Home() {
 </div>
 
 
+
+
 </header>
 
-<nav>
-<div className="container-fluid bg-dark text-white text-center desktop-nav-bar">
-    <div className="row ">
-         <div className="col-2">
+
+
+ 
+
+
+<div className="container-fluid bg-dark text-white  desktop-nav-bar">
+ <div className="row ">
+         <div className="col-2 col-lg-3 col-xl-2 col-xxl-2">
              <p className="text-start text-uppercase fw-bold mt-2 ms-4 desktop-category-menu-icon" >Categories  <span  className="fw-bold mt-2 ms-4"><i className="fas fa-bars"></i></span> </p>
-           
+             <div className="desktop-main-menu">
+             <ul>
+         <li >
+          <a href="">  <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" />Men    <span><i className="fa fa-angle-right" ></i></span> </a>
+         
+          <ul>
+            <p>Men</p>
+           <li>  <a href=""> Shirt</a></li>
+           <li>  <a href=""> Shooe</a></li>
+           <li>  <a href=""> Lungi</a></li>
 
-         </div>
-         <div className="col-8 pt-3">
-             
-            <div className="d-inline p-2 w-100" >
-                <i className="fas fa-check"></i> 1-2 Days Delivery
-                
-            </div>
-            <div className="d-inline p-2 w-100" >
-                        <i className="fas fa-check"></i> 1-2 Days Delivery
-                        
-           
-                    </div>
 
-                    <div className="d-inline p-2 w-100" >
-                        <i className="fas fa-check"></i> 1-2 Days Delivery
-                        
-                    </div>
-                    <div className="d-inline p-2 w-100" >
-                        <i className="fas fa-check"></i> 1-2 Days Delivery
-                        
-                    </div>
+          </ul>
+          
+          </li>
+            <li>  <a href="">  <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" />Women   <span><i className="fa fa-angle-right" ></i></span> </a></li>
+          <li> 
+             <a href=""> <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" /> Clutch Bag   <span><i className="fa fa-angle-right" ></i></span> 
+             </a>
+          <ul>
+            <p>Men</p>
+           <li>  <a href=""> Shirt</a></li>
+           <li>  <a href=""> Shooe</a></li>
+           <li>  <a href=""> Lungi</a></li>
+
+
+          </ul>
+          
+          </li>
+          
+        </ul>
         </div>
+         </div>
+         <div className="col-9 col-lg-9 col-xl-9 col-xxl-9 text-center pt-3 swiper-section">
+             
+           
+         
+                    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() =>console.log("asi") }
+      onSwiper={(swiper) => console.log(swiper)}
+      Autoplay={false}
+    >
+             <SwiperSlide>           
+             <p> <i className="fas fa-check"></i> 1-2 Days Delivery</p>                
+             </SwiperSlide>
+             <SwiperSlide>           
+             <p> <i className="fas fa-check"></i> 1-2 Days Delivery</p>                
+             </SwiperSlide>
 
+             <SwiperSlide>           
+             <p> <i className="fas fa-check"></i> 1-2 Days Delivery</p>                
+             </SwiperSlide>
+             <SwiperSlide>           
+             <p> <i className="fas fa-check"></i> 1-2 Days Delivery</p>                
+             </SwiperSlide>
+             <SwiperSlide>           
+             <p> <i className="fas fa-check"></i> 1-2 Days Delivery</p>                
+             </SwiperSlide>
+             <SwiperSlide>           
+             <p> <i className="fas fa-check"></i> 1-2 Days Delivery</p>                
+             </SwiperSlide>
+
+
+           
+      
+     
+    </Swiper>
+        </div>
+        
         </div>
    </div>
 
 
-</nav>
+ 
+
 
 <section className="slider-section">
 
@@ -207,7 +264,7 @@ export default function Home() {
       
 {fesuredProduct.map(()=>(
 
-      <div className="col-12 col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+      <div className="col-6 col-md-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
       <div className="card home-fesured-product mb-4" style={{border:"none"}}>
   <img src="https://cdn.shoplightspeed.com/shops/637055/files/032457826/325x375x2/image.jpg" className="card-img-top p-2" alt="..." />
   <div className="card-body">
@@ -255,16 +312,16 @@ export default function Home() {
 <p className="mt-5">Popular products <span><a href=""  className="me-4">View all</a></span> </p>
 {rightProduct.map(()=>(
 <div className="row align-items-center single-home-right-product">
-  <div className="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
-    <img src="https://cdn.shoplightspeed.com/shops/637055/files/23475247/65x75x2/mohini-vol-61004.jpg" />
+  <div className="col-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+    <img className="img-fluid" alt="product" src="https://cdn.shoplightspeed.com/shops/637055/files/23475247/65x75x2/mohini-vol-61004.jpg" />
 
   </div>
-  <div className="col-12 col-md-4 col-lg-6 col-xl-6 col-xxl-6 ">
-   <p className="fw-bold">Benarashi katan sharee </p>
+  <div className="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 ">
+   <p className="fw-normal">Benarashi katan sharee </p>
   </div>
-  <div className="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+  <div className="col-3 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
     <div className="d-flex">
-    <p className="fw-bold"> $109.99 </p>
+    <p className="fw-normal"> $109.99 </p>
    <div className="view">
      <a href="https://www.goandgift.com/mohini-vol-61004.html" className="ms-2 home-right-view" data-json="https://www.goandgift.com/mohini-vol-61004.html?format=json" data-pid="31180702"><i className="fas fa-search"></i></a></div>
      </div>
