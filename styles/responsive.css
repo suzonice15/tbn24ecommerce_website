@@ -13,6 +13,11 @@
   }
 
  @media (max-width: 575.98px) { 
+    .main-category-section .top-main-category-body {
+        margin-top: -191px !important;
+        height: 187px !important;
+        padding-top: 119px !important;
+    }
     .top-category-body {     
         top: -344px;       
         background: rgba(0,0,0,.3);
@@ -54,6 +59,11 @@
   @media (max-width: 767.98px) { 
     .brand-section {
         margin-top: -53px !important;
+    }
+    .main-category-section .top-main-category-body {      
+        margin-top: -221px;  
+        height: 218px;      
+        padding-top: 131px;     
     }
     .slider-section img {
         height: 294px !important;

@@ -246,6 +246,47 @@ color:white
     font-size: 22px;
     text-transform: uppercase;
     font-weight: bold;}
+    .main-category-section .top-main-category-body  {
+        text-align: center;
+        position: relative;
+        margin-top: -298px;        
+        background: rgba(0,0,0,.3);
+        width: 100%;
+        height: 295px;
+        align-items: center;
+        padding-top: 131px;
+        border-radius: 4px;
+        
+    }
+
+    .main-category-image-left{       
+        height: 170px;
+        overflow: hidden;    
+    }
+
+    .main-category-right-category-name{
+      
+        background: #ccc6c6;
+        padding: 62px;
+    }
+    .main-category-section .image-holder{
+        position: relative;
+        overflow: hidden;
+    }
+    .main-category-section {
+        margin-bottom:20px ;
+    }
+    
+    .main-category-section:hover .image-holder img {
+        transform: scale(1.1,1.1);
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+ 
+    }
+    .main-category-section:hover .top-main-category-body {
+        background: none;
+
+    }
 .top-category-body  {
     text-align: center;
     position: relative;

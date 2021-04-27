@@ -53,23 +53,39 @@ export default function category() {
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
-   <div className="row mt-4  ">
-   
-   
 
-      
+<div className="row">
+<div className="col-md-6 col-12 col-sm-6 col-lg-6 col-xl-6  col-xxl-6 d-none d-sm-block  d-md-block d-lg-block d-xl-block d-xxl-block">
+       <div class="main-category-image-left" >
+           <img   className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/750x450x1/image.jpg"/>
+       </div>
+       </div>
+
+       <div className="col-md-6 col-12 col-sm-6 col-lg-6 col-xl-6  col-xxl-6">
+       <div class="main-category-right-category-name text-center" >
+           <h2 className="fw-bold fs-2">Shirt</h2>
+        </div>
+       </div>
+</div>
+   <div className="row mt-4  ">
+
+       
+   
 {fesuredProduct.map((i,index)=>(
 
-index <4 ?
+index <6 ?
 
-      <div   className="col-6 top-category-section col-md-4 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 ">
-      <div    className="mb-1 single-top-category-section " style={{border:"none"}}>
+      <div   className="col-6 main-category-section col-md-4 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 ">
+      <div    className="mb-1 image-holder" >
 
+          
   <img  src="https://cdn.shoplightspeed.com/shops/637055/files/21652607/400x400x1/shirt.jpg" className="img-fluid" alt="..." />
-  <div className="top-category-body">
-    <a href="" className="text-decoration-none">Shirt</a> 
+  
   </div>
-</div>
+  <div className="top-main-category-body ">
+    <a href="" className="text-decoration-none fw-bold text-white fs-5">Shirt</a> 
+  </div>
+
       </div>
       :null 
     
@@ -79,16 +95,6 @@ index <4 ?
      
     </div>
 </div>
-
- 
-
-
-
- 
-
- 
-
-
  
 <Footer />
 </>
