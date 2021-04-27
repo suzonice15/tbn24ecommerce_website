@@ -8,15 +8,20 @@
     .slider-bottom-section {
         height: 1078px !important;
     }
+    .main-category-section .top-main-category-body {
+        margin-top: -191px !important;
+        height: 187px !important;
+        padding-top: 119px !important;
+    }
      
     
   }
 
  @media (max-width: 575.98px) { 
     .main-category-section .top-main-category-body {
-        margin-top: -191px !important;
-        height: 187px !important;
-        padding-top: 119px !important;
+        margin-top: -162px !important;
+        height: 159px !important;
+        padding-top: 65px !important;
     }
     .top-category-body {     
         top: -344px;       
@@ -61,9 +66,9 @@
         margin-top: -53px !important;
     }
     .main-category-section .top-main-category-body {      
-        margin-top: -221px;  
-        height: 218px;      
-        padding-top: 131px;     
+        margin-top: -221px ;  
+        height: 218px ;      
+        padding-top: 131px ;     
     }
     .slider-section img {
         height: 294px !important;
