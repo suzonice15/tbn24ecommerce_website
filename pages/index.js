@@ -94,7 +94,7 @@ export default function Home() {
         <div className="col-lg-4 col-xl-4 col-xxl-4 py-3 search">
             <form action="https://www.goandgift.com/search/" className="searchform" method="get">
                 <div className="search-holder">
-                    <input type="text" className="form-control" name="q" placeholder="Search.." autocomplete="off" />
+                    <input type="text" className="form-control" name="q" placeholder="Search.." autoComplete="off" />
                     <i className="fas fa-search" ></i>
                    
                 </div>
