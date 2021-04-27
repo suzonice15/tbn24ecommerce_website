@@ -17,8 +17,9 @@
         top: -344px;       
         background: rgba(0,0,0,.3);
         height: 345px;       
-        padding-top: 183px;       
+        padding-top: 247px;       
     }
+   
     
     .slider-bottom-section {
         height: 1078px !important;
@@ -35,7 +36,7 @@
         margin-top: -1134px; 
     }
     .slider-bottom-content {
-        padding: 151px 115px    !important;
+        padding: 151px 100px     !important;
      }
      .single-slider-bottom-section {
         
@@ -43,7 +44,7 @@
         
     }
     .top-category-section {
-        max-height: 360px !important;
+        max-height: 181px  !important;
     }
    
     
@@ -51,6 +52,9 @@
 
 
   @media (max-width: 767.98px) { 
+    .brand-section {
+        margin-top: -53px !important;
+    }
     .slider-section img {
         height: 294px !important;
     }  
