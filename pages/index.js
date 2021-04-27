@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { Swiper, SwiperSlide,Autoplay } from 'swiper/react';
+import {useState,useEffect } from 'react'
+import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 
 // Import Swiper styles
 // import React,{useState} from 'react'
@@ -29,6 +31,13 @@ const fesuredProduct=[
 ]
 
 const rightProduct=[
+  
+  {
+    alu:"",
+  },
+  {
+    alu:"",
+  },
   {
     alu:"",
   },
@@ -50,13 +59,19 @@ const rightProduct=[
 
  
 export default function Home() {
-   
+  
 
+  const [sweepSlider, setSweepSlider] = useState(3)
 
-  const fesured_product=()=>{
+  useEffect(()=>{
 
-        
-  }
+    const width=window.innerWidth 
+    if(width< 576){
+       setSweepSlider(1)
+    } else if(width > 576 && width < 992)  {
+      setSweepSlider(2)
+    }
+   })
   return (
      <>
       <Head>
@@ -70,13 +85,13 @@ export default function Home() {
 
 <header>
 <div className="container-fluid">
-    <div className="row desktop-header-section px-4">
+    <div className="row desktop-header-section  px-4">
 
-        <div className="col-2">
+        <div className="col-lg-2 col-xl-2 col-xxl-2">
             <img  style={{height: "60px"}} className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/assets/logo.png?2021040919052920210101132750" />
 
         </div>   
-        <div className="col-4 py-3 search">
+        <div className="col-lg-4 col-xl-4 col-xxl-4 py-3 search">
             <form action="https://www.goandgift.com/search/" className="searchform" method="get">
                 <div className="search-holder">
                     <input type="text" className="form-control" name="q" placeholder="Search.." autocomplete="off" />
@@ -87,7 +102,7 @@ export default function Home() {
             
         </div>   
          
-        <div className="col-6 py-3">
+        <div className="col-lg-6 col-xl-6 col-xxl-6 py-3">
             <div className="menu-right-side-icon me-2">
            
                 <a href=""><span className="me-1">us</span><i className="fas fa-globe"></i></a>
@@ -97,10 +112,32 @@ export default function Home() {
              </div>  
     </div>
 </div>
+
+</div> 
+
+<div className="container-fluid">
+<div className="row mobile-header-section   d-lg-none d-xl-none d-xxl-none px-4">
+
+<div className="col-3 py-3">
+<i className="fas fa-bars fs-5" ></i>
+<i className="fas fa-search ms-3 fs-5" ></i>
+</div>   
+<div className="col-7 text-center py-2">
+<img  style={{height: "50px"}} className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/assets/logo.png?2021040919052920210101132750" />
+
+</div>   
+ 
+<div className="col-2 py-3">
+    <div className="menu-right-side-icon me-2">
+   
+               
+        <a href=""> <i className="fas fa-cart-plus"></i></a>
+     </div>  
+</div>
 </div>
 
-
-
+</div>
+ 
 
 </header>
 
@@ -111,7 +148,7 @@ export default function Home() {
 
 <div className="container-fluid bg-dark text-white  desktop-nav-bar">
  <div className="row ">
-         <div className="col-2 col-lg-3 col-xl-2 col-xxl-2">
+         <div className="col-lg-2 col-xl-2 col-xxl-2 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
              <p className="text-start text-uppercase fw-bold mt-2 ms-4 desktop-category-menu-icon" >Categories  <span  className="fw-bold mt-2 ms-4"><i className="fas fa-bars"></i></span> </p>
              <div className="desktop-main-menu">
              <ul>
@@ -146,13 +183,13 @@ export default function Home() {
         </ul>
         </div>
          </div>
-         <div className="col-9 col-lg-9 col-xl-9 col-xxl-9 text-center pt-3 swiper-section">
+         <div className="col-12 col-lg-9 col-xl-9 col-xxl-9 text-center pt-3 swiper-section">
              
            
          
                     <Swiper
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={sweepSlider}
       onSlideChange={() =>console.log("asi") }
       onSwiper={(swiper) => console.log(swiper)}
       Autoplay={false}
@@ -218,35 +255,33 @@ export default function Home() {
 </section>
 <section className="slider-bottom-section">
 <div className="container-fluid  px-5 mt-4">
-  <div className="row">
+  <div className="row " >
    
-    <div className="col-6 col-md-6 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+         
+{fesuredProduct.map((i,index)=>(
+
+index <4 ?
+  <div className="col-12 col-md-6 col-sm-6 col-lg-3 col-xl-3 col-xxl-4 mb-2 text-center">
+    
+    <div className="single-slider-bottom-section text-center"  >
     <div className="card" >
-  <img  className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/v/63926/assets/highlight-2-image.jpg?20200722005117" className="card-img-top" alt="..." />
-   <h2>Women</h2>
+      <img src="/slider_buttom.jpg" />
+    <div className="slider-bottom-body">
+      <div className="slider-bottom-content">
+   <h4 className="">Women</h4>
    <p>Be Enchanting</p>
    <a>See Collection</a>
-</div>
-    </div>
+   </div>
+   </div>
 
-    <div className="col-6 col-md-6 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
-    <div className="card" >
-  <img className="img-fluid"  src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/v/63926/assets/highlight-2-image.jpg?20200722005117" className="card-img-top" alt="..." />
-  <h2>Meb</h2>
-   <p>Be Enchanting</p>
-   <a>See Collection</a>
 </div>
-    </div>
-
-    <div className="col-6 col-md-6 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
-    <div className="card" >
-  <img  className="img-fluid"  src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/v/63926/assets/highlight-2-image.jpg?20200722005117" className="card-img-top" alt="..." />
-  <h2>Women</h2>
-   <p>Be Enchanting</p>
-   <a>See Collection</a>
 </div>
-    </div>
 
+    </div>
+     :null 
+    
+     ))}
+ 
 
   </div>
 </div>
@@ -273,7 +308,7 @@ export default function Home() {
     <h5 className="text-center fw-normal">$ 500</h5>
 
     <div className="card-section d-flex " style={{float:"right"}}>
-      <input type="text"  className="form-control me-1" style={{width:"45px"}} name="quantity" value="10"/>
+      <input type="text"  className="form-control me-1" style={{width:"45px"}} name="quantity" onChange={()=>  10} value="10"/>
        <button type="button" ><i className="fas fa-shopping-bag"></i></button>
     </div>
 
@@ -351,7 +386,7 @@ export default function Home() {
 
 index <4 ?
 
-      <div className="col-12 col-md-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3">
+      <div className="col-6 col-md-4 col-sm-6 col-lg-3 col-xl-3 col-xxl-3">
       <div className="card home-fesured-product mb-4" style={{border:"none"}}>
   <img src="https://cdn.shoplightspeed.com/shops/637055/files/032457826/325x375x2/image.jpg" className="card-img-top p-2" alt="..." />
   <div className="card-body">
@@ -360,7 +395,7 @@ index <4 ?
     <h5 className="text-center fw-normal">$ 500</h5>
 
     <div className="card-section d-flex " style={{float:"right"}}>
-      <input type="text"  className="form-control me-1" style={{width:"45px"}} name="quantity" value="10"/>
+      <input type="text"  className="form-control me-1" style={{width:"45px"}} name="quantity" onChange={()=>  10} value="10"/>
        <button type="button" ><i className="fas fa-shopping-bag"></i></button>
     </div>
 

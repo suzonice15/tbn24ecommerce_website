@@ -9,9 +9,7 @@
     float: right;
     top: -27px;
     left: -5px;
-    }
-
-
+    } 
 .desktop-main-menu ul{
     padding: 0;
     position: absolute;
@@ -113,17 +111,33 @@ margin-bottom: 0px;
      .desktop-category-menu-icon{background: #3a3939;padding: 8px;}
      .desktop-nav-bar{height:55px;}
      .slider-section img{height: 450px;}
-     .slider-bottom-section img{height: 450px;}
-     .slider-bottom-section h2{
-        position: relative;
-        text-align: center;
+     .slider-bottom-section img{height: 384px;}
+     .single-slider-bottom-section{
        
-        margin-top: -309px;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;}
+        .slider-bottom-section{
+            height: 176px;
+    }
+     
+     .slider-bottom-body{
+        position: absolute;
         color: white;
-        text-transform: capitalize;
-        font-size: 25px;
-        font-weight: bold;
         
+        }
+        .single-slider-bottom-section:hover .slider-bottom-content{
+         
+            background: 0 0;
+            opacity: 1; 
+        }
+        .slider-bottom-content{
+            padding: 143px 91px;
+            opacity: 0;
+            background: rgba(0,0,0,.25);
+            opacity: 1; 
         }
      .slider-bottom-section p{
         position: relative;
@@ -143,8 +157,7 @@ margin-bottom: 0px;
         font-size: 15px;
         font-weight: bold;
         background: #6b4e48;
-        width: 150px;
-        left: 33%;
+        
         color: white !important;
         padding: 7px;
         cursor: pointer;
@@ -246,9 +259,12 @@ padding-top: 157px;
 border-radius: 4px;
 }
 .top-category-section .single-top-category-section{overflow: hidden;}
-.top-category-section:hover .single-top-category-section{-webkit-transform: scale(1.1,1.1);
+.top-category-section .single-top-category-section img{overflow: hidden;}
+
+
+ .single-top-category-section:hover img{-webkit-transform: scale(1.1,1.1);
     transform: scale(1.1,1.1);
-    transition: all .4s ease-in-out;}
+    transition: all .4s ease-in-out;overflow: hidden;}
 .top-category-section:hover .top-category-body{background:none}
 .top-category-section{max-height: 200px;}
 .brand-section{margin-top: 109px !important;}
