@@ -4,6 +4,7 @@ import {useState,useEffect } from 'react'
 import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Link from 'next/link';
 
 
 // Import Swiper styles
@@ -48,7 +49,7 @@ export default function category() {
 <div className="container-fluid  px-5">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><Link href='/'><a className="text-decoration-none">Home</a></Link></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>

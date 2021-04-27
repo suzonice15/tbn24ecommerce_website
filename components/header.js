@@ -1,6 +1,7 @@
 import react,{useState,useCallback ,useEffect } from 'react'
 import { Swiper, SwiperSlide,Autoplay } from 'swiper/react';
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Header=()=>{
 
@@ -24,7 +25,7 @@ const Header=()=>{
     return (
         <>
          <Head>
-        <title>Create Next App</title>
+        <title>Go and Gift</title>
         <link rel="icon" href="/favicon.ico" />
         
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous"/>
@@ -36,7 +37,7 @@ const Header=()=>{
     <div className="row desktop-header-section  px-4">
 
         <div className="col-lg-2 col-xl-2 col-xxl-2">
-            <img  style={{height: "60px"}} className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/assets/logo.png?2021040919052920210101132750" />
+        <Link href='/'><a><img  style={{height: "60px"}} className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/assets/logo.png?2021040919052920210101132750" /></a></Link>
 
         </div>   
         <div className="col-lg-4 col-xl-4 col-xxl-4 py-3 search">
@@ -71,8 +72,8 @@ const Header=()=>{
 <i className="fas fa-search ms-3 fs-5" ></i>
 </div>   
 <div className="col-7 text-center py-2">
-<img  style={{height: "50px"}} className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/assets/logo.png?2021040919052920210101132750" />
-
+ <Link href='/'><a><img  style={{height: "50px"}} className="img-fluid" src="https://cdn.shoplightspeed.com/shops/637055/themes/10999/assets/logo.png?2021040919052920210101132750" />
+</a></Link>
 </div>   
  
 <div className="col-2 py-3">
@@ -96,19 +97,21 @@ const Header=()=>{
          <div className="col-lg-2 col-xl-2 col-xxl-2 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
              <p onClick={menuShowfunction}  className="text-start text-uppercase fw-bold mt-2 ms-4 desktop-category-menu-icon" >Categories  <span  className="fw-bold mt-2 ms-4">
              {menuShow ? 
-             <i   className="fas fa-times fs-5"></i>
-                 :<i   className="fas fa-bars fs-5"></i>
+             <i   className="fas fa-times me-2 fs-5"></i>
+                 :<i   className="fas fa-bars me-2 fs-5"></i>
                  }
                  </span> </p>
             
             {menuShow ?   <div className="desktop-main-menu">
              <ul>
          <li >
-          <a href="">  <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" />Men    <span><i className="fa fa-angle-right" ></i></span> </a>
+
+          <Link href='/category'><a>
+              <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" />Men    <span><i className="fa fa-angle-right" ></i></span></a></Link>
          
           <ul>
             <p>Men</p>
-           <li>  <a href=""> Shirt</a></li>
+           <li><Link href='/sub-category'><a href=""> Shirt</a></Link></li>
            <li>  <a href=""> Shooe</a></li>
            <li>  <a href=""> Lungi</a></li>
 
@@ -116,20 +119,22 @@ const Header=()=>{
           </ul>
           
           </li>
-            <li>  <a href="">  <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" />Women   <span><i className="fa fa-angle-right" ></i></span> </a></li>
+         
           <li> 
-             <a href=""> <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" /> Clutch Bag   <span><i className="fa fa-angle-right" ></i></span> 
-             </a>
+          <Link href="/category"><a> <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" /> Clutch Bag   <span><i className="fa fa-angle-right" ></i></span> 
+             </a></Link>
           <ul>
             <p>Men</p>
-           <li>  <a href=""> Shirt</a></li>
-           <li>  <a href=""> Shooe</a></li>
-           <li>  <a href=""> Lungi</a></li>
+           <li> <a> Shirt</a></li>
+           <li><a> Shooe</a></li>
+           <li><a> Lungi</a></li>
 
 
           </ul>
           
           </li>
+          <li> <Link href="/category"><a>  <img className="me-3" src="https://cdn.shoplightspeed.com/shops/637055/files/21496590/35x35x1/image.jpg" />Women    </a></Link></li>
+
           
         </ul>
         </div>
